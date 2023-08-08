@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.wrapper{
+    background-image: url("./gradient-bg.jpg");
+}
+
+.game-info{
+
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.game-container{
+
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    aspect-ratio: 1/1;   /* aspect ratio hamara grid ko square me convert karne ke lie use hota hai  */
+    
+}
+
+.box{
+
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color:white;
+}
+
+.box1, .box2, .box4, .box5{
+    border-right:2px solid white;
+    border-bottom:2px solid white;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+
+.box7, .box8{
+    border-right:2px solid white;
+}
+
+
+
+.btn{
+
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 2rem;
+    cursor:pointer;
+    color:white;
+    border-radius: 1rem;
+    scale:0;
+
+}
+
+.btn.active{
+    scale:1;
+}
+
+.win{
+    background-color: rgba(0, 255, 0, 0.3);
+}
